@@ -8,14 +8,11 @@ Proceedings of the Eleventh International AAAI Conference on Web and Social Medi
 ## Useful Information
 
 This code runs under Matlab 2018. No tested on earlier/later versions, but it should work as well.
-Te file |test_all.m| contains some information to run the scripts.
+Te file `test_all.m` contains some information to run the scripts.
 The directory data contains sample data.
 
-- compact_posts_bp_ok.mat
-- 2015-03.mat
-from barrapunto (file compact_posts_bp_ok.mat) and meneame (file 2015-03.mat) threads.
+- `compact_posts_bp_ok.mat`: a sample of threads from from barrapunto to test the model without reciprocity/authorships
+- `2015-03.mat`: a sample of from meneame to test the model with reciprocity/authorships
 
-The model with authorships comb = 'FULL_MODEL_AUTHORS_0' takes considerably longer to run.
+The model with authorships `comb = 'FULL_MODEL_AUTHORS_0'` takes considerably longer to run.
 In a standard desktop machine, it takes about 5 minuts to run one optimization with 320 posts.
-
-
