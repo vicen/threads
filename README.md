@@ -11,8 +11,7 @@ This code runs under Matlab 2018. No tested on earlier/later versions, but it sh
 Te file `test_all.m` contains some information to run the scripts.
 The directory data contains sample data.
 
-- `compact_posts_bp_ok.mat`: a sample of threads from from barrapunto to test the model without reciprocity/authorships
-- `2015-03.mat`: a sample of from meneame to test the model with reciprocity/authorships
+- `compact_posts_bp_ok.mat`: a sample of `7485` discussion threads from from barrapunto to test the model without reciprocity/authorships
+- `2015-03.mat`: a sample of `1093` discussion threads from meneame to test the model with reciprocity/authorships
 
-The model with authorships `comb = 'FULL_MODEL_AUTHORS_0'` takes considerably longer to run.
-In a standard desktop machine, it takes about 5 minuts to run one optimization with 320 posts.
+In an Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz, the model without reciprocity (`comb=FULL_MODEL'`) takes about `5` seconds to converge over the fist dataset, whereas the model with reciprocity/authorships `comb = 'FULL_MODEL_AUTHORS_0'` takes `3.5` minutes to converge on the second dataset.
